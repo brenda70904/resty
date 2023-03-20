@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
   return (
     <header>
-      <h1>RESTy</h1>
+      <h1 data-testid="headerH1" >RESTy</h1>
     </header>
   );
 }
