@@ -2,6 +2,10 @@ import React from 'react';
 
 import './Form.scss';
 
+// const Form = () =>{
+//   return
+// }
+
 class Form extends React.Component {
 
   handleSubmit = e => {
