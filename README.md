@@ -1,12 +1,12 @@
-# LAB - Class 26
+# Project: resty
 
-## Project: resty
+## Author: Brenda Jow
 
-### Author: Brenda Jow
+### Problem Domain
+
+  Our application will be an API testing tool that can be run in any browser, allowing a user to easily interact with APIs in a familiar interface.
+
 <!-- 
-### Problem Domain  
-
-
 ### Links and Resources
 
 - [GitHub Actions ci/cd](https://github.com/rkgallaway/server-deployment-practice-d51/actions) 
