@@ -13,33 +13,33 @@
 
 ### Links and Resources
 
-- [GitHub Actions ci/cd](https://github.com/rkgallaway/server-deployment-practice-d51/actions) 
+- [GitHub Actions ci/cd](https://github.com/brenda70904/resty/actions)
 - [front-end application](http://xyz.com) (when applicable)
 
 ### Setup
 
 #### `.env` requirements (where applicable)
 
-for now I have none and do not require one
+not require
 
 
 #### How to initialize/run your application (where applicable)
 
-- e.g. `npm start`
-
+`npm start`
+<!-- 
 #### How to use your library (where applicable)
 
 #### Features / Routes
 
 - Feature One: Details of feature
-- GET : `/hello` - specific route to hit
+- GET : `/hello` - specific route to hit -->
 
 #### Tests
 
 - How do you run tests?
+  - `npm test a`
 - Any tests of note?
 - Describe any tests that you did not complete, skipped, etc
-
-#### UML
-
-Link to an image of the UML for your application and response to events
+  - don't have test for `<App/>`
+<!-- 
+#### UML -->
