@@ -5,23 +5,19 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Form from './Components/Form';
 import Results from './Components/Results';
+import axios from 'axios';
 
 const App = () => {
 
   let [data, setData] = useState(null);
-  let [requestParams, setRequestParams] = useState({})
+  let [requestParams, setRequestParams] = useState('')
 
-  const callApi = (requestParams) => {
-    // mock output
-    data = {
-      count: 2,
-      results: [
-        { name: 'fake thing 1', url: 'http://fakethings.com/1' },
-        { name: 'fake thing 2', url: 'http://fakethings.com/2' },
-      ],
-    };
-    setData(data);
-    setRequestParams(requestParams);
+const callApi = async (requestParams) => {
+    console.log( "requestParams",requestParams);
+    let response = await axios(requestParams)
+    console.log("app.jsx",response.data);
+    setData(response.data);
+    setRequestParams(requestParams); 
   }
 
   return (

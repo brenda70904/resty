@@ -4,9 +4,13 @@ const Results = (props) => {
   const { data } = props;
   return (
     <>
-      <section>
-        <pre >{data ? JSON.stringify(data, undefined, 2) : null}</pre>
-      </section>
+      {
+      data ?
+        <section>
+          <pre > {JSON.stringify(data, undefined, 2)}</pre>
+        </section>
+        : null
+        }
     </>
   )
 }
