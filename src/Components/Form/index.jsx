@@ -7,7 +7,7 @@ const Form = (props) => {
 
   let handleSubmit = e => {
     e.preventDefault();
-    const formData = {
+    let formData = {
       method: 'GET',
       url: 'https://pokeapi.co/api/v2/pokemon',
     };
