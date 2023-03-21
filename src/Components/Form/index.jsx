@@ -15,9 +15,9 @@ const Form = (props) => {
   }
   return (
     <>
-      <form onSubmit={() => handleSubmit()}>
+      <form onSubmit={handleSubmit}>
         <label >
-          <span>URL: </span>
+          <span>URL:</span>
           <input name='url' type='text' />
           <button type="submit">GO!</button>
         </label>
