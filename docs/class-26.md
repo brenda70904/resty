@@ -41,5 +41,7 @@ not require
 - Any tests of note?
 - Describe any tests that you did not complete, skipped, etc
   - don't have test for `<App/>`
-<!-- 
-#### UML -->
+
+#### UML
+
+![uml](../assets/class26-uml.png)
