@@ -19,14 +19,38 @@ const Form = (props) => {
       <form onSubmit={handleSubmit}>
         <label >
           <span >API URL:</span>
-          <input data-testid="input" name='url' type='text' required/>
+          <input data-testid="inputUrl" name='url' type='text' required />
           <button data-testid="button" type="submit">GO!</button>
         </label>
+        <lable>JSON data
+          <textarea name="textArea" rows="4" cols="50" />
+        </lable>
         <label className="methods">
-          <span id="get" onClick={() => setMethod('GET')}>GET</span>
-          <span id="post" onClick={() => setMethod('POST')} >POST</span>
-          <span id="put" onClick={() => setMethod('PUT')}>PUT</span>
-          <span id="delete" onClick={() => setMethod('DELETE')}>DELETE</span>
+          <span
+            data-testid="get-method"
+            style={{ background: method === "GET" ? 'red' : "#ccc " }}
+            id="get"
+            onClick={(e) => setMethod(e.target.innerText)}>
+            GET
+          </span>
+          <span
+            style={{ background: method === "POST" ? 'red' : "#ccc " }}
+            id="post"
+            onClick={(e) => setMethod(e.target.innerText)} >
+            POST
+          </span>
+          <span
+            style={{ background: method === "PUT" ? 'red' : "#ccc " }}
+            id="put"
+            onClick={(e) => setMethod(e.target.innerText)}>
+            PUT
+          </span>
+          <span
+            style={{ background: method === "DELETE" ? 'red' : "#ccc " }}
+            id="delete"
+            onClick={(e) => setMethod(e.target.innerText)}>
+            DELETE
+          </span>
         </label>
       </form>
     </>
@@ -34,3 +58,6 @@ const Form = (props) => {
 }
 
 export default Form;
+
+
+// e.target.innertext
