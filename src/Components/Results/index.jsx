@@ -1,5 +1,6 @@
 import React from 'react';
 import './Result.scss';
+
 const Results = (props) => {
   const { data } = props;
   return (
@@ -7,7 +8,7 @@ const Results = (props) => {
       {
       data ?
         <section>
-          <pre data-testid="data" > {JSON.stringify(data, undefined, 2)}</pre>
+          <pre data-testid="result" > {JSON.stringify(data, undefined, 2)}</pre>
         </section>
         : null
         }
