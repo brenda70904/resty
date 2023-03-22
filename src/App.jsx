@@ -10,12 +10,10 @@ import axios from 'axios';
 const App = () => {
 
   let [data, setData] = useState(null);
-  let [requestParams, setRequestParams] = useState('')
+  let [requestParams, setRequestParams] = useState({});
 
 const callApi = async (requestParams) => {
-    console.log( "requestParams",requestParams);
     let response = await axios(requestParams)
-    console.log("app.jsx",response.data);
     setData(response.data);
     setRequestParams(requestParams); 
   }
@@ -23,8 +21,8 @@ const callApi = async (requestParams) => {
   return (
     <>
       <Header />
-      <div>Request Method : {requestParams.method}</div>
-      <div>URL : {requestParams.url}</div>
+      <div data-testid="method" >Request Method : {requestParams.method}</div>
+      <div data-testid="url" >URL : {requestParams.url}</div>
       <Form handleApiCall={callApi} />
       <Results data={data} />
       <Footer />
