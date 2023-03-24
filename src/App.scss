@@ -1,4 +1,4 @@
-$backgroundColor: #744b4bc1;
+$backgroundColor: #e2bfac;
 $fontFamily:Lucida, Gill Sans, sans-serif;;
 ;
 
@@ -32,7 +32,7 @@ body {
   }
 
   header {
-    background: darken($backgroundColor, 75);
+    background: darken($backgroundColor, 50);
     border-radius: 15px;
     color: #eee;
     padding: 10px;
