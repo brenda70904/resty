@@ -6,12 +6,12 @@ const Results = (props) => {
   return (
     <>
       {
-      data ?
-        <section>
-          <pre data-testid="result" > {JSON.stringify(data, undefined, 2)}</pre>
-        </section>
-        : null
-        }
+        data ?
+          <section>
+            <pre data-testid="result" > {JSON.stringify(data, undefined, 2)}</pre>
+          </section>
+          : null
+      }
     </>
   )
 }
